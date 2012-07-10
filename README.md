@@ -6,11 +6,11 @@ IE6 CSS fix for Twitter BootStrap v2.
 
 ## Usage
 
-	```html
-	<!--[if IE 6]>
-	<link href="bootstrap-ie6.css" rel="stylesheet">
-	<![endif]-->
-	```
+```html
+<!--[if IE 6]>
+<link href="bootstrap-ie6.css" rel="stylesheet">
+<![endif]-->
+```
 
 ## License
 
