@@ -7,3 +7,62 @@ Licensed under the Apache License v2.0
 http://www.apache.org/licenses/LICENSE-2.0
 */
 
+body {
+	font-size: 12px;
+}
+
+.span12,
+.span11,
+.span10,
+.span9,
+.span8,
+.span7,
+.span6,
+.span5,
+.span4,
+.span3,
+.span2,
+.span1 {
+	float: left;
+	margin-left: 20px;
+}
+
+.row-fluid .span12,
+.row-fluid .span11,
+.row-fluid .span10,
+.row-fluid .span9,
+.row-fluid .span8,
+.row-fluid .span7,
+.row-fluid .span6,
+.row-fluid .span5,
+.row-fluid .span4,
+.row-fluid .span3,
+.row-fluid .span2,
+.row-fluid .span1  {
+	display: block;
+	float: left;
+	width: 100%;
+	min-height: 28px;
+	margin-left: 2.127659574%;
+	*margin-left: 2.0744680846382977%;
+}
+
+input {
+	width: auto;
+	height: auto;
+	padding: 0;
+	margin: 3px 0;
+	*margin-top: 0;
+	border: 0;
+}
+
+select {
+	height: auto;
+}
+
+.radio input,
+.checkbox input {
+	float: left;
+	margin-left: -18px;
+}
+
