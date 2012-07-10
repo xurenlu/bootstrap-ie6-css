@@ -2,7 +2,7 @@
 Bootstrap IE6
 ===
 
-IE6 CSS fix for Twitter BootStrap v2.
+IE6 CSS fix for Twitter Bootstrap.
 
 ## Usage
 
