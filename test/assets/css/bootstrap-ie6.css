@@ -12,8 +12,8 @@ body {
 }
 
 .row {
+	margin: 0;
 	margin-left: -30px;
-	overflow: hidden;
 }
 
 .span12,
@@ -28,8 +28,11 @@ body {
 .span3,
 .span2,
 .span1 {
-	float: left;
-	margin-left: 28px;
+	margin-left: 30px;
+	display: inline-block;
+	*display: inline;
+	zoom: 1;
+	vertical-align: top;
 }
 
 .row-fluid .span12,
@@ -43,12 +46,16 @@ body {
 .row-fluid .span4,
 .row-fluid .span3,
 .row-fluid .span2,
-.row-fluid .span1	{
-	display: block;
-	float: left;
-	_height: 28px;
+.row-fluid .span1 {
 	margin-left: 2.127659574%;
-	*margin-left: 2.0744680846382977%;
+	display: inline-block;
+	*display: inline;
+	zoom: 1;
+	vertical-align: top;
+}
+
+.row-fluid .first-child {
+  margin-left: 0;
 }
 
 input {
@@ -70,7 +77,29 @@ select {
 	margin-left: -18px;
 }
 
+.input-mini,
+.input-small,
+.input-medium,
+.input-large,
+.input-xlarge,
+.input-xxlarge {
+	display: inline-block;
+	*display: inline;
+	zoom: 1;
+	vertical-align: middle;
+	line-height: 18px;
+	height: 18px;
+	padding: 4px;
+	margin: 0;
+	margin-bottom: 9px;
+}
+
+.nav-collapse {
+	width: auto;
+}
+
 .nav li a {
+	display: inline-block;
 	*display: inline;
 	zoom: 1;
 	vertical-align: middle;
@@ -250,7 +279,10 @@ select {
 
 .nav-tabs li,
 .nav-pills li {
-	float: left;
+	display: inline-block;
+	*display: inline;
+	zoom: 1;
+	vertical-align: top;
 }
 
 .nav-tabs li a,
@@ -262,27 +294,31 @@ select {
 }
 
 .nav-tabs li {
-	margin-bottom: -1px;
+	margin-bottom: -2px;
 }
 
 .nav-tabs li a {
 	padding-top: 8px;
 	padding-bottom: 8px;
 	line-height: 18px;
-	border: 1px solid transparent;
+	height: 18px;
+	border: 1px solid #fff;
 }
 
 .nav-tabs li a:hover {
 	border-color: #eeeeee #eeeeee #dddddd;
 }
 
+.nav-tabs .active {
+	background-color: #fff;
+}
+
 .nav-tabs .active a,
 .nav-tabs .active a:hover {
-	color: #555555;
+	color: #555;
 	cursor: default;
-	background-color: #ffffff;
+	background-color: #fff;
 	border: 1px solid #ddd;
-	border-bottom-color: transparent;
 }
 
 .nav-pills li a {
@@ -296,42 +332,6 @@ select {
 .nav-pills .active a:hover {
 	color: #ffffff;
 	background-color: #0088cc;
-}
-
-.nav-stacked li {
-	float: none;
-}
-
-.nav-stacked li a {
-	margin-right: 0;
-}
-
-.nav-tabs .nav-stacked {
-	border-bottom: 0;
-}
-
-.nav-tabs.nav-stacked li a {
-	border: 1px solid #ddd;
-}
-
-.nav-tabs.nav-stacked li a:hover {
-	z-index: 2;
-	border-color: #ddd;
-}
-
-.nav-pills.nav-stacked li a {
-	margin-bottom: 3px;
-}
-
-.nav .dropdown.active a:hover {
-	color: #000000;
-	cursor: pointer;
-}
-
-.nav li.dropdown.open.active a:hover {
-	color: #ffffff;
-	background-color: #999999;
-	border-color: #999999;
 }
 
 .navbar a:hover {
@@ -375,13 +375,11 @@ select {
 	background-color: #222222;
 }
 
-.navbar .nav li.open .dropdown-toggle,
-.navbar .nav li.active .dropdown-toggle {
-	background-color: transparent;
-}
-
-.navbar .nav li.active a:hover {
-	color: #ffffff;
+.btn {
+	font-size: 12px;
+	line-height: 18px;
+	padding: 2px 8px;
+	border: 1px solid #bfbfbf;
 }
 
 .btn-large .icon-glass,
@@ -668,6 +666,28 @@ select {
 .btn-small .icon-briefcase,
 .btn-small .icon-fullsbtn-small {
 	margin-top: -1px;
+}
+
+.btn-group .btn {
+	position: relative;
+	float: left;
+	margin-left: -1px;
+}
+
+.btn-group .first-child {
+	margin-left: 0;
+}
+
+.btn-group .active {
+	z-index: 2;
+}
+
+.btn-group .dropdown-toggle {
+	*padding-top: 4px;
+	padding-right: 8px;
+	*padding-bottom: 4px;
+	padding-left: 8px;
+	font-size: 0;
 }
 
 .thumbnails li {
