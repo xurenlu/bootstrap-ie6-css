@@ -14,6 +14,6 @@ IE6 CSS fix for Twitter Bootstrap.
 
 ## License
 
-Copyright (c) 2012 Longhao Luo, http://www.kindsoft.net/
+Copyright (c) 2012 Twitter, Inc
 
 Licensed under the Apache License v2.0, http://www.apache.org/licenses/LICENSE-2.0
